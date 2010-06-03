@@ -41,7 +41,7 @@ cp -a lua-support/{codesnippets,rc,scripts,templates,wordlists} \
 	$RPM_BUILD_ROOT%{_vimdatadir}/lua-support
 
 install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-cp -a %{SOURCE1} $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+cp -a %{SOURCE1} lua-support/doc/* $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
